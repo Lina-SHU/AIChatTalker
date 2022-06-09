@@ -1,0 +1,32 @@
+.text-center{
+  text-align: center;
+}
+
+.d-sm-none{
+  @media (min-width: 576px) {
+    display: none;
+  }
+}
+
+.d-none{
+  display: none;
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+.card-border{
+  box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+
+.section-title {
+  font-size: $fs-6;
+  margin-bottom: $sp-8;
+  @media (max-width: 767px) {
+    font-size: $fs-6-sm;
+    margin-bottom: $sp-7;
+  }
+}

@@ -1,0 +1,382 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  p {
+    color: $color-primary;
+    font-size: $fs-4;
+    margin-bottom: $sp-1;
+
+    @media (max-width: 767px) {
+      font-size: $fs-3;
+    }
+  }
+
+  h2 {
+    font-size: $fs-7;
+    margin-bottom: $sp-3;
+
+    @media (max-width: 767px) {
+      font-size: $fs-6;
+    }
+  }
+
+  h3 {
+    font-size: $fs-5-sm;
+
+    @media (max-width: 767px) {
+      font-size: $fs-3;
+      margin-bottom: $sp-7;
+    }
+  }
+}
+
+.title-image {
+  img {
+    width: 532px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: $spacer*2.5;
+  }
+}
+
+/* 三大平台 我來搞定 */
+.theme-social{
+  padding-top: $sp-10;
+  padding-bottom: $sp-10;
+  @media (max-width: 767px) {
+    padding-top: $sp-9;
+    padding-bottom: $sp-9;
+    background-image: url('../../img/ball01.svg');
+    background-repeat: no-repeat;
+    background-position: -30% 10%;
+    background-size: 126px;
+  }
+}
+.socialList{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    width: 23%;
+    @media (max-width: 767px) {
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: $sp-4;
+    }
+  }
+  img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: $sp-4;
+    @media (max-width: 767px) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: $sp-3;
+    }
+  }
+  h3 {
+    font-size: $fs-5;
+    margin-bottom: $sp-4;
+    @media (max-width: 767px) {
+      font-size: $fs-4;
+      margin-bottom: $sp-3;
+    }
+  }
+}
+/* 任何的角色，我都能給 */
+.character{
+  h2{
+    margin-bottom: $sp-3;
+  }
+  .character-subtitle{
+    margin-bottom: $sp-8;
+    @media (max-width: 767px) {
+      margin-bottom: $sp-7;
+    }
+  }
+}
+.character-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 23%;
+    overflow: hidden;
+    background-color: $white;
+    @media (max-width: 768px) {
+      width: 46%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: $sp-4;
+    }
+    @media (max-width: 767px) {
+      width: 73%;
+    }
+  }
+  .character-content{
+    padding: $sp-3 $sp-3 $sp-4 $sp-3;
+  }
+  h3{
+    color: $color-primary;
+    margin-bottom: $sp-3;
+  }
+}
+
+/* 品牌流量池 */
+.special{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: $sp-10;
+  padding-bottom: $spacer*4.5;
+  @media (max-width: 767px) {
+    padding-top: $sp-9;
+    padding-bottom: $spacer*2.25;
+  }
+}
+
+.special-list{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 992px) {
+    width: 48%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  li{
+    width: 45%;
+    padding: $sp-7 $sp-7 $sp-8 $sp-7;
+    margin-bottom: $sp-6;
+    @media (max-width: 992px) {
+      width: 48%;
+    }
+    @media (max-width: 767px) {
+      width: 67%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: $sp-4;
+      padding-left: $sp-4;
+    }
+    &:nth-child(2){
+      order: 3;
+      @media (max-width: 767px) {
+        order: 2;
+      }
+    }
+    &:nth-child(3) {
+      order: 2;
+      @media (max-width: 767px) {
+        order: 3;
+      }
+    }
+    &:nth-child(4) {
+      order: 4;
+    }
+    h3{
+      font-size: $fs-4;
+      margin-bottom: $sp-3;
+    }
+  }
+  .special-img{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $sp-4;
+    box-shadow: 0px 2px 10px #00000014;
+  }
+}
+
+.speical-content{
+  width: 35%;
+  @media (max-width: 992px) {
+    width: 48%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+  h2{
+    font-size: $fs-6;
+    margin-bottom: $sp-3;
+    @media (max-width: 767px) {
+      margin-bottom: $sp-3;
+    }
+  }
+  p{
+    margin-bottom: $sp-4;
+    @media (max-width: 767px) {
+      margin-bottom: $sp-3;
+    }
+  }
+  .special-btn{
+    background-color: $color-primary;
+    color: $white;
+    padding: $sp-2 $sp-7;
+    border-radius: 27px;
+    display: inline-block;
+    @media (max-width: 767px) {
+      margin-bottom: $sp-7;
+    }
+  }
+}
+
+/* 好評如潮 */
+.feedback{
+  padding-bottom: $sp-10;
+  h2{
+    margin-bottom: 104px;
+    @media (max-width: 767px) {
+      margin-bottom: 88px;
+    }
+  }
+}
+.feedback-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  margin-bottom: $sp-4;
+  li{
+    width: 31%;
+    padding: $sp-8 $sp-7 $sp-4 $sp-7;
+    position: relative;
+    background-color: $white;
+    @media (max-width: 767px) {
+      padding: $sp-8 $sp-3 $sp-3 $sp-3;
+      width: 100%;
+      &:nth-child(2), &:nth-child(3){
+        display: none;
+      }
+    }
+    .feedback-img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      left: 36px;
+      top: -56px;
+    }
+    .feedback-content{
+      border-bottom: 1px solid #00000014;
+      padding-bottom: $sp-4;
+      margin-bottom: $sp-4;
+      @media (max-width: 767px) {
+        padding-bottom: $sp-3;
+        margin-bottom: $sp-3;
+      }
+    }
+  }
+  .rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $sp-1;
+    img{
+      width: 16px;
+      height: 16px;
+      margin-right: $sp-1/2;
+    }
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  li{
+    width: 10px;
+    height: 10px;
+    background-color: #DDDDDD;
+    border-radius: 50px;
+    margin-left: $sp-1;
+  }
+  .active{
+    background-color: #FFD153;
+    width: 16px;
+  }
+}
+
+/* call to action */
+.cta{
+  background-image: url('../../img/home_footer.svg');
+  height: 503px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  @media(max-width: 576px) {
+    background: none;
+    height: auto;
+    img{
+      width: 100%;
+    }  
+  }
+  p {
+    font-size: $fs-5;
+    font-weight: bold;
+    margin-bottom: $sp-4;
+  }
+  .ctaBtn {
+    margin-bottom: $sp-9;
+    background-color: $color-primary;
+    color: $white;
+    padding: $sp-2 $sp-7;
+    border-radius: 27px;
+    border: none;
+    display: inline-block;
+    &:hover{
+      cursor: pointer;
+      background-color: darken($color-primary, 10%);
+    }
+  }
+}
+
+.cta-position{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 5%;
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+
+/* 背景球球 */
+.bg-ball2{
+  background-image: url('../img/ball02.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100vw - 210px) 40%;
+  background-size: 310px;
+  @media (max-width: 767px) {
+    background-size: 135px;
+    background-position: calc(100vw - 88px) 50%;
+  }
+}
+
+.bg-ball3{
+  background-image: url('../img/ball03.svg');
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: 8vw 10%;
+  @media (max-width: 992px) {
+    background-position: -4vw 10%;
+  }
+  @media (max-width: 767px) {
+    background-size: 153px;
+    background-position: -35% 10%;
+  }
+}

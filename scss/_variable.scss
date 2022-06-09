@@ -1,0 +1,27 @@
+$color-primary: #56C4C5;
+$color-secondary: #FF5D50;
+$light-gray: #F5F5F5;
+$white: #fff;
+$yellow: #F5CA52;
+
+$spacer: 16px;
+$sp-1: $spacer*.5; // 8
+$sp-2: $spacer*.75; // 12
+$sp-3: $spacer; // 16
+$sp-4: $spacer*1.5; // 24
+$sp-6: $spacer*1.75; // 28
+$sp-7: $spacer*2; // 32
+$sp-8: $spacer*3; // 48
+$sp-9: $spacer*3.75; // 60
+$sp-10: $spacer*6.5; // 100
+
+$font-base: 16px;
+$fs-1: $font-base*.75; // 12
+$fs-2: $font-base*.875; // 14
+$fs-3: $font-base;// 16
+$fs-4: $font-base*1.125; // 18
+$fs-5-sm: $font-base*1.25; // 20
+$fs-5: $font-base*1.5; // 24
+$fs-6-sm: $font-base*1.75; // 28
+$fs-6: $font-base*2; // 32
+$fs-7: $font-base*3; // 48
