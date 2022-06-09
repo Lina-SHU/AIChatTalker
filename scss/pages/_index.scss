@@ -53,7 +53,7 @@
   @media (max-width: 767px) {
     padding-top: $sp-9;
     padding-bottom: $sp-9;
-    background-image: url('../../img/ball01.svg');
+    background-image: url('../img/ball01.svg');
     background-repeat: no-repeat;
     background-position: -30% 10%;
     background-size: 126px;
@@ -311,7 +311,7 @@
 
 /* call to action */
 .cta{
-  background-image: url('../../img/home_footer.svg');
+  background-image: url('../img/home_footer.svg');
   height: 503px;
   background-repeat: no-repeat;
   background-position: center top;
